@@ -1,0 +1,47 @@
+/* Footer Styles */
+.footer {
+    background-color: #0e1623; /* Dark background */
+    color: #fff; /* White text */
+    padding: 40px 0; /* Padding around the footer */
+    text-align: center; /* Center align the text */
+    font-family: Arial, sans-serif; /* General font */
+  }
+  
+  .footer_Container {
+    max-width: 1200px; /* Limit max width */
+    margin: 0 auto; /* Center container */
+  }
+  
+  h3 {
+    color: #00d87e; /* Green color for the tagline */
+    font-size: 1.5rem; /* Size of the tagline */
+    margin-bottom: 20px; /* Space below the heading */
+  }
+  
+  .foot_List {
+    margin-bottom: 30px; /* Space below the list */
+  }
+  
+  .foot_List ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0;
+  }
+  
+  .foot_List ul li {
+    display: inline-block; /* Display items inline */
+    margin: 0 15px; /* Add space between items */
+    font-size: 1rem; /* Font size for list items */
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+  .foot_List ul li:hover {
+    color: #00d87e; /* Hover color change */
+  }
+  /* Footer Rights Text */
+  .footer-rights {
+    margin-top: 20px; /* Add margin above rights text */
+    font-size: 0.8rem; /* Smaller font for the rights text */
+    color: #ccc; /* Light grey color for rights text */
+  }
+  
+  

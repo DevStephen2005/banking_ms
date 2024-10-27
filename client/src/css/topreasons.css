@@ -1,0 +1,60 @@
+.top-reasons {
+    background-color: #0f1626; /* Dark background color */
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+  }
+  
+  .top-reasons-header h2 {
+    font-size: 32px;
+    color: #1ea57f;
+    margin-bottom: 10px;
+  }
+  
+  .top-reasons-header .highlight {
+    color: #ff8a00; /* Highlighted text color */
+  }
+  
+  .top-reasons-header p {
+    font-size: 18px;
+    margin-bottom: 40px;
+  }
+  
+  .features {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    width: 200px;
+    margin-bottom: 30px;
+  }
+  
+  .feature .icon {
+    background-color: #1ea57f;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 20px auto;
+  }
+  
+  .feature img {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .feature h3 {
+    font-size: 25px;
+    color: #1ea57f;
+    margin-bottom: 10px;
+  }
+  
+  .feature p {
+    font-size: 17px;
+    line-height: 1.5;
+  }
+  
