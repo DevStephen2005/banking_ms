@@ -1,45 +1,37 @@
 import { Link } from 'react-router-dom';
-import Footer from '../components/Footer';
-import Testimonial from '../components/Testmonials';
-import TopReasons from '../components/TopReasons';
-import '../css/home.css';
+import header from '../assets/images/header.png'
+import Navbar from '../components/Navbar';
 
 const Home = () => {
   return (
-    <>
-        <div className="homepage-container">
-      <header className="navbar">
-        <div className="logo">E-BANK</div>
-        <nav>
-          <ul className="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Reviews</a></li>
-          </ul>
-        </nav>
-        <div className="auth-buttons">
-          <Link to='/register' > <button className="register_btn">Register</button> </Link>
-          <Link to='/login' > <button className="login_Btn">Login</button> </Link>
-        </div>
-      </header>
+    <div className="bg-green-400 text-white min-h-screen flex flex-col items-center">
+      {/* Navbar */}
+      <Navbar />
 
-      <div className="content-section">
-        <h1>E-Bank is Everything you need now!</h1>
-        <p>
-          Take your financial life online. Your E-Bank account will be a one-stop-shop 
-          for sending, saving, budgeting, withdrawing, and much more.
-        </p>
-        <Link to='/register' > <button className="red">Register Now</button> </Link>
+      {/* Hero Section */}
+      <div className="flex flex-col md:flex-row items-center justify-center flex-grow">
+        <div className="text-center md:text-left md:w-1/2 p-8">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4 text-black">Online Banking System</h2>
+          <p className="text-lg mb-4">
+            Developed by using MERN Stack.<br />
+            React JS | Node JS | MongoDB
+          </p>
+          <Link to='/register'
+            className="bg-red-500 text-white px-6 py-3 text-lg font-semibold rounded hover:bg-red-700"
+          >
+            Register Now
+          </Link>
+        </div>
+        <div className="md:w-1/2 p-8">
+          <img
+            src={header}
+            alt="Header"
+            className="w-full rounded"
+          />
+        </div>
       </div>
-        </div>
-        {/* TopReason Component  */}
-        <TopReasons />
-        {/* Testimonials Component  */}
-        <Testimonial />
-        {/* Footer Component  */}
-        <Footer />
-    </>
+    </div>
   );
-}
+};
 
-export default Home;
+export default Home
